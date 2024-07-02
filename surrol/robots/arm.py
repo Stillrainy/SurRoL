@@ -9,6 +9,7 @@ https://github.com/jhu-dvrk/dvrk-ros/blob/7b3d48ca164755ccfc88028e15baa9fbf7aa13
 """
 from typing import Union
 import numpy as np
+import logging
 import pybullet as p
 import roboticstoolbox as rtb
 
@@ -290,8 +291,8 @@ class Arm(object):
         assert len(abs_input) == self.DoF, "The number of joints should match the arm DoF."
         if not np.all(np.bitwise_and(abs_input >= self.limits['lower'][:self.DoF],
                                      abs_input <= self.limits['upper'][:self.DoF])):
-            print("Joint position out of valid range!")
-            print("Set joint:", abs_input)
+            logging.info("Joint position out of valid range!")
+            logging.info("Set joint:", abs_input)
             return False
         return True
 
