@@ -198,14 +198,16 @@
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="meshes/visual/tool_pitch_link.STL"/>
+                <mesh filename="meshes/visual/tool_pitch_link.OBJ"/>
+                <!-- <mesh filename="meshes/visual/tool_pitch_link.STL"/> -->
             </geometry>
             <material name="silver"/>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="meshes/collision/tool_pitch_link.STL"/>
+                <mesh filename="meshes/visual/tool_pitch_link.OBJ"/>
+                <!-- <mesh filename="meshes/visual/tool_pitch_link.STL"/> -->
             </geometry>
         </collision>
     </link>
@@ -266,7 +268,8 @@
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <!--      <origin rpy="0 0 0" xyz="0.0007 0.0051 0"/>-->
             <geometry>
-                <mesh filename="meshes/visual/tool_gripper1_link_wide.obj"/>
+                <mesh filename="meshes/visual/gripper_right.obj"/>
+                <!-- <mesh filename="meshes/visual/tool_gripper1_link_wide.obj"/> -->
                 <!--        <box size="0.0014 0.0102 0.0018"/>-->
             </geometry>
             <material name="silver"/>
@@ -305,7 +308,8 @@
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <!--      <origin rpy="0 0 0" xyz="-0.0007 0.0051 0"/>-->
             <geometry>
-                <mesh filename="meshes/visual/tool_gripper2_link_wide.obj"/>
+                <mesh filename="meshes/visual/gripper_left.obj"/>
+                <!-- <mesh filename="meshes/visual/tool_gripper2_link_wide.obj"/> -->
                 <!--        <box size="0.0014 0.0102 0.0018"/>-->
             </geometry>
             <material name="silver"/>
