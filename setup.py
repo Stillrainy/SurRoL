@@ -13,8 +13,10 @@ if __name__ == '__main__':
         ],
         install_requires=[
             "gym>=0.15.6",
+            "gymnasium",
+            "stable-baselines3[extra]",
             "pybullet>=3.0.7",
-            "numpy>=1.21.1",
+            "numpy>=1.21.1,<2.0",
             "scipy",
             "pandas",
             "imageio",
