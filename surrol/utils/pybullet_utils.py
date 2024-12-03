@@ -851,7 +851,8 @@ def render_image(width, height, view_matrix, proj_matrix, shadow=1):
                                            projectionMatrix=proj_matrix,
                                            shadow=shadow,
                                            lightDirection=(10, 0, 10),
-                                           renderer=p.ER_BULLET_HARDWARE_OPENGL)
+                                           renderer=p.ER_BULLET_HARDWARE_OPENGL,
+                                           flags=p.ER_SEGMENTATION_MASK_OBJECT_AND_LINKINDEX)
 
     rgb_array = np.array(px, dtype=np.uint8)
     rgb_array = np.reshape(rgb_array, (height, width, 4))
